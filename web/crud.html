@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/crud.css">
+</head>
+<body>
+
+
+        <!-- CRUD DEL JUEGO -->
+
+        <div id="contenedor-crud" class="none">
+            <h1>Gestion de Preguntas</h1>
+        
+            <!-- Formulario para agregar una nueva pregunta -->
+            <form id="agregarPreguntaForm">
+                <h2>Agregar Pregunta</h2>
+                <label for="pregunta">Pregunta:</label>
+                <input type="text" id="pregunta" name="pregunta" required><br><br>
+        
+                <label for="resposta_correcta">Respuesta Correcta (índice):</label>
+                <input type="number" id="resposta_correcta" name="resposta_correcta" required><br><br>
+        
+                <label for="imatge">URL de la Imagen:</label>
+                <input type="text" id="imatge" name="imatge"><br><br>
+        
+                <button type="submit">Agregar Pregunta</button>
+            </form>
+        
+            <!-- Formulario para editar una pregunta existente -->
+            <form id="editarPreguntaForm">
+                <h2>Editar Pregunta</h2>
+                <label for="editarPreguntaId">ID de la Pregunta:</label>
+                <input type="number" id="editarPreguntaId" name="editarPreguntaId" required><br><br>
+        
+                <label for="nuevaPregunta">Nueva Pregunta:</label>
+                <input type="text" id="nuevaPregunta" name="nuevaPregunta" required><br><br>
+        
+                <button type="submit">Actualizar Pregunta</button>
+            </form>
+        
+            <!-- Formulario para eliminar una pregunta -->
+            <form id="eliminarPreguntaForm">
+                <h2>Eliminar Pregunta</h2>
+                <label for="eliminarPreguntaId">ID de la Pregunta a Eliminar:</label>
+                <input type="number" id="eliminarPreguntaId" name="eliminarPreguntaId" required><br><br>
+        
+                <button type="submit">Eliminar Pregunta</button>
+            </form>
+        
+            <!-- Formulario para visualizar todas las preguntas -->
+            <form id="verPreguntasForm">
+                <h2>Ver Preguntas</h2>
+                <button type="submit">Cargar Preguntas</button>
+            </form>
+        
+            <!-- Lista donde se mostrarán las preguntas cargadas -->
+            <ul id="preguntasList"></ul>
+    
+            <br>
+            
+            <h1>Gestion de Respuestas</h1>
+    <!-- Formulario para agregar una nueva respuesta -->
+    <form id="agregarRespuestaForm">
+        <h2>Agregar Respuesta</h2>
+        <label for="pregunta_id">ID de la Pregunta:</label>
+        <input type="number" id="pregunta_id" name="pregunta_id" required><br><br>
+    
+        <label for="respuesta">Etiqueta de Respuesta:</label>
+        <input type="text" id="respuesta" name="respuesta" required><br><br>
+    
+        <button type="submit">Agregar Respuesta</button>
+    </form>
+    
+    <!-- Formulario para editar una respuesta existente -->
+    <form id="editarRespuestaForm">
+        <h2>Editar Respuesta</h2>
+        <label for="editarRespuestaId">ID de la Respuesta:</label>
+        <input type="number" id="editarRespuestaId" name="editarRespuestaId" required><br><br>
+    
+        <label for="nuevaRespuesta">Nueva Etiqueta:</label>
+        <input type="text" id="nuevaRespuesta" name="nuevaRespuesta" required><br><br>
+    
+        <button type="submit">Actualizar Respuesta</button>
+    </form>
+    
+    <!-- Formulario para eliminar una respuesta -->
+    <form id="eliminarRespuestaForm">
+        <h2>Eliminar Respuesta</h2>
+        <label for="eliminarRespuestaId">ID de la Respuesta a Eliminar:</label>
+        <input type="number" id="eliminarRespuestaId" name="eliminarRespuestaId" required><br><br>
+    
+        <button type="submit">Eliminar Respuesta</button>
+    </form>
+    
+    <!-- Formulario para visualizar todas las respuestas de una pregunta -->
+    <form id="verRespuestasForm">
+        <h2>Ver Respuestas</h2>
+        <label for="verPreguntaId">ID de la Pregunta:</label>
+        <input type="number" id="verPreguntaId" name="verPreguntaId" required><br><br>
+    
+        <button type="submit">Cargar Respuestas</button>
+    </form>
+    
+    <!-- Lista de respuestas -->
+    <ul id="respuestasList"></ul>
+
+    <script src="./js/crud.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,164 @@
+/* Paleta de colores */
+:root {
+    --color-fondo: #F6F7EB;
+    --color-principal: #E94F37;
+    --color-secundario: #393E41;
+    --color-texto: #393E41;
+    --color-blanco: #FFFFFF;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Aseguramos que todos los elementos respeten el tamaño del contenedor */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Título principal */
+h1 {
+    color: var(--color-principal);
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Títulos de secciones */
+h2 {
+    color: var(--color-secundario);
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+/* Formularios */
+form {
+    background-color: var(--color-blanco);
+    border: 2px solid var(--color-secundario);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Etiquetas */
+label {
+    font-size: 1.2em;
+    color: var(--color-secundario);
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-secundario);
+    border-radius: 5px;
+    font-size: 1em;
+    color: var(--color-secundario);
+    background-color: var(--color-blanco);
+}
+
+/* Evitamos que los inputs sobresalgan */
+input,
+button {
+    max-width: 100%;
+}
+
+/* Botones */
+button {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darken(var(--color-principal), 10%);
+}
+
+/* Listas de preguntas y respuestas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: var(--color-fondo);
+    border: 1px solid var(--color-secundario);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: var(--color-texto);
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 10px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    body {
+        padding: 10px;
+    }
+}
