@@ -146,7 +146,7 @@ botonEnviarRespuestas.addEventListener("click", () => {
         preguntaId: p.id,
         respuestaId: p.respuesta
     }));
-    console.log(respuestas);
+    //sconsole.log(respuestas);
     clearInterval(timer); 
     enviarResultados(respuestas);
     preguntaContainer.className = "none";
@@ -164,6 +164,7 @@ function enviarResultados(respuestas) {
     .then(response => response.json())
     .then(data => {
         mostrarResultados(data);
+        console.log(data);
         preguntaContainer.className = "none";
         botonesSigAnt.className = "none";
     })
