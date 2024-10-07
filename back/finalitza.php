@@ -25,20 +25,21 @@ if (!isset($datos['respuestas']) || !is_array($datos['respuestas'])) {
 $respuesta_usuario = $datos['respuestas'];
 $preguntas = $_SESSION['preguntas'];
 $correctas = 0;
-$cantidad_preguntas = count($datos['respuestas']);
+$cantidad_preguntas = count($respuesta_usuario); // Cambiar aquí
 
-foreach ($preguntas as $index => $pregunta) {
+foreach ($preguntas as $pregunta) {
     $pregunta_id = $pregunta['id'];
     $correcta = $pregunta['correcta'];
-    
-    
-    if (isset($respuesta_usuario[$index]) && $respuesta_usuario[$index]['preguntaId'] == $pregunta_id) {
-        $respuesta_usuario_id = $respuesta_usuario[$index]['respuestaId'];
-        if ($respuesta_usuario_id == $correcta) {
-            $correctas++;
+
+    foreach ($respuesta_usuario as $respuesta) { // Cambiar aquí
+        if ($respuesta['preguntaId'] == $pregunta_id) {
+            if ($respuesta['respuestaId'] == $correcta) {
+                $correctas++;
+            }
         }
     }
 }
 
 echo json_encode(['correctas' => $correctas, 'total' => $cantidad_preguntas]);
+
 ?>

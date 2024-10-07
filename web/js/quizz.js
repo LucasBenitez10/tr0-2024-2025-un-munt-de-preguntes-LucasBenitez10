@@ -147,6 +147,7 @@ botonEnviarRespuestas.addEventListener("click", () => {
         respuestaId: p.respuesta
     }));
     console.log(respuestas);
+
     clearInterval(timer); 
     enviarResultados(respuestas);
     preguntaContainer.className = "none";
@@ -161,16 +162,20 @@ function enviarResultados(respuestas) {
         },
         body: JSON.stringify({ respuestas }) 
     })
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Error en la respuesta del servidor');
+        }
+        return response.json();
+    })
     .then(data => {
         mostrarResultados(data);
-        preguntaContainer.className = "none";
-        botonesSigAnt.className = "none";
     })
     .catch(error => {
         console.error('Error:', error);
     });
 }
+
 
 function mostrarResultados(data) {
     let htmlStr = '';
