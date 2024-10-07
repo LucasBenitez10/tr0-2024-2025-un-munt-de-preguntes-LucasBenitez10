@@ -1,0 +1,364 @@
+{
+    "preguntes": [
+        {
+            "id": 1,
+            "pregunta": "Quina marca de cotxes utilitza el lema 'Ultimate Driving Machine'?",
+            "respostes": [
+                {
+                    "id": 1,
+                    "etiqueta": "BMW"
+                },
+                {
+                    "id": 2,
+                    "etiqueta": "Mercedes-Benz"
+                },
+                {
+                    "id": 3,
+                    "etiqueta": "Audi"
+                },
+                {
+                    "id": 4,
+                    "etiqueta": "Lexus"
+                }
+            ],
+            "resposta_correcta": 1,
+            "imatge": "https://exemple.com/bmw.jpg"
+        },
+        {
+            "id": 2,
+            "pregunta": "Quin és el límit de velocitat en una carretera urbana?",
+            "respostes": [
+                {
+                    "id": 1,
+                    "etiqueta": "50 km/h"
+                },
+                {
+                    "id": 2,
+                    "etiqueta": "80 km/h"
+                },
+                {
+                    "id": 3,
+                    "etiqueta": "100 km/h"
+                },
+                {
+                    "id": 4,
+                    "etiqueta": "120 km/h"
+                }
+            ],
+            "resposta_correcta": 1,
+            "imatge": "https://exemple.com/velocitat.jpg"
+        },
+        {
+            "id": 3,
+            "pregunta": "Què significa un senyal de circulació de color vermell amb un triangle?",
+            "respostes": [
+                {
+                    "id": 1,
+                    "etiqueta": "Advertència"
+                },
+                {
+                    "id": 2,
+                    "etiqueta": "Prohibició"
+                },
+                {
+                    "id": 3,
+                    "etiqueta": "Obligació"
+                },
+                {
+                    "id": 4,
+                    "etiqueta": "Informació"
+                }
+            ],
+            "resposta_correcta": 1,
+            "imatge": "https://exemple.com/triangle.jpg"
+        },
+        {
+            "id": 4,
+            "pregunta": "Quina és la distància mínima de seguretat entre vehicles en autopista?",
+            "respostes": [
+                {
+                    "id": 1,
+                    "etiqueta": "50 metres"
+                },
+                {
+                    "id": 2,
+                    "etiqueta": "100 metres"
+                },
+                {
+                    "id": 3,
+                    "etiqueta": "150 metres"
+                },
+                {
+                    "id": 4,
+                    "etiqueta": "200 metres"
+                }
+            ],
+            "resposta_correcta": 2,
+            "imatge": "https://exemple.com/distancia.jpg"
+        },
+        {
+            "id": 5,
+            "pregunta": "Quin és el procediment correcte en cas d'accident de trànsit sense ferits?",
+            "respostes": [
+                {
+                    "id": 1,
+                    "etiqueta": "Abandonar el lloc ràpidament"
+                },
+                {
+                    "id": 2,
+                    "etiqueta": "Esperar a les autoritats"
+                },
+                {
+                    "id": 3,
+                    "etiqueta": "Intercanviar dades i omplir un part amistós"
+                },
+                {
+                    "id": 4,
+                    "etiqueta": "Continuar la marxa"
+                }
+            ],
+            "resposta_correcta": 3,
+            "imatge": "https://exemple.com/accident.jpg"
+        },
+        {
+            "id": 6,
+            "pregunta": "Com s'ha d'indicar un canvi de carril a l'autopista?",
+            "respostes": [
+                {
+                    "id": 1,
+                    "etiqueta": "Utilitzant l'intermitent"
+                },
+                {
+                    "id": 2,
+                    "etiqueta": "Tocant el clàxon"
+                },
+                {
+                    "id": 3,
+                    "etiqueta": "Fent senyals amb les mans"
+                },
+                {
+                    "id": 4,
+                    "etiqueta": "No és necessari indicar-ho"
+                }
+            ],
+            "resposta_correcta": 1,
+            "imatge": "https://exemple.com/intermitent.jpg"
+        },
+        {
+            "id": 7,
+            "pregunta": "Quina és la velocitat màxima per a vehicles pesants en una carretera convencional?",
+            "respostes": [
+                {
+                    "id": 1,
+                    "etiqueta": "80 km/h"
+                },
+                {
+                    "id": 2,
+                    "etiqueta": "90 km/h"
+                },
+                {
+                    "id": 3,
+                    "etiqueta": "100 km/h"
+                },
+                {
+                    "id": 4,
+                    "etiqueta": "120 km/h"
+                }
+            ],
+            "resposta_correcta": 1,
+            "imatge": "https://exemple.com/velocitat_pesants.jpg"
+        },
+        {
+            "id": 8,
+            "pregunta": "En quina situació és obligatori l'ús del cinturó de seguretat?",
+            "respostes": [
+                {
+                    "id": 1,
+                    "etiqueta": "Només en carreteres interurbanes"
+                },
+                {
+                    "id": 2,
+                    "etiqueta": "En tots els vehicles i a tot moment"
+                },
+                {
+                    "id": 3,
+                    "etiqueta": "Només per al conductor"
+                },
+                {
+                    "id": 4,
+                    "etiqueta": "Només en zones de baixa velocitat"
+                }
+            ],
+            "resposta_correcta": 2,
+            "imatge": "https://exemple.com/cinturo.jpg"
+        },
+        {
+            "id": 9,
+            "pregunta": "Què indica una línia contínua pintada al centre de la carretera?",
+            "respostes": [
+                {
+                    "id": 1,
+                    "etiqueta": "Es pot avançar si no hi ha trànsit"
+                },
+                {
+                    "id": 2,
+                    "etiqueta": "Prohibició de canvi de carril o avançament"
+                },
+                {
+                    "id": 3,
+                    "etiqueta": "Es pot avançar només de nit"
+                },
+                {
+                    "id": 4,
+                    "etiqueta": "Es pot avançar amb precaució"
+                }
+            ],
+            "resposta_correcta": 2,
+            "imatge": "https://exemple.com/linia_continua.jpg"
+        },
+        {
+            "id": 10,
+            "pregunta": "Què significa un semàfor en ambre fix?",
+            "respostes": [
+                {
+                    "id": 1,
+                    "etiqueta": "Atenció, canviarà a vermell"
+                },
+                {
+                    "id": 2,
+                    "etiqueta": "Es pot continuar"
+                },
+                {
+                    "id": 3,
+                    "etiqueta": "Aturar-se immediatament"
+                },
+                {
+                    "id": 4,
+                    "etiqueta": "Acció no regulada"
+                }
+            ],
+            "resposta_correcta": 1,
+            "imatge": "https://exemple.com/semafor.jpg"
+        },
+        {
+            "id": 11,
+            "pregunta": "Quina és la distància mínima que s'ha de mantenir en el moment de fer un avançament?",
+            "respostes": [
+                {
+                    "id": 1,
+                    "etiqueta": "1 metre"
+                },
+                {
+                    "id": 2,
+                    "etiqueta": "1.5 metres"
+                },
+                {
+                    "id": 3,
+                    "etiqueta": "2 metres"
+                },
+                {
+                    "id": 4,
+                    "etiqueta": "3 metres"
+                }
+            ],
+            "resposta_correcta": 3,
+            "imatge": "https://exemple.com/avance.jpg"
+        },
+        {
+            "id": 12,
+            "pregunta": "Quin senyal indica que s'aproxima un pas de vianants?",
+            "respostes": [
+                {
+                    "id": 1,
+                    "etiqueta": "Senyal triangular"
+                },
+                {
+                    "id": 2,
+                    "etiqueta": "Senyal rectangular"
+                },
+                {
+                    "id": 3,
+                    "etiqueta": "Senyal circular"
+                },
+                {
+                    "id": 4,
+                    "etiqueta": "Senyal quadrada"
+                }
+            ],
+            "resposta_correcta": 1,
+            "imatge": "https://exemple.com/pas_vianants.jpg"
+        },
+        {
+            "id": 13,
+            "pregunta": "Quina és la multa per conduir sense el cinturó de seguretat posat?",
+            "respostes": [
+                {
+                    "id": 1,
+                    "etiqueta": "50 euros"
+                },
+                {
+                    "id": 2,
+                    "etiqueta": "100 euros"
+                },
+                {
+                    "id": 3,
+                    "etiqueta": "150 euros"
+                },
+                {
+                    "id": 4,
+                    "etiqueta": "200 euros"
+                }
+            ],
+            "resposta_correcta": 2,
+            "imatge": "https://exemple.com/multa_cinturo.jpg"
+        },
+        {
+            "id": 14,
+            "pregunta": "Quina és la maniobra correcta per fer una volta en U?",
+            "respostes": [
+                {
+                    "id": 1,
+                    "etiqueta": "Mirar pel retrovisor i girar ràpidament"
+                },
+                {
+                    "id": 2,
+                    "etiqueta": "Indicar amb l'intermitent i girar"
+                },
+                {
+                    "id": 3,
+                    "etiqueta": "Parar i mirar si hi ha trànsit"
+                },
+                {
+                    "id": 4,
+                    "etiqueta": "Realitzar la maniobra sense senyalitzar"
+                }
+            ],
+            "resposta_correcta": 3,
+            "imatge": "https://exemple.com/volta_U.jpg"
+        },
+        {
+            "id": 15,
+            "pregunta": "Quina és la norma de seguretat en el trànsit sobre l'ús del telèfon mòbil?",
+            "respostes": [
+                {
+                    "id": 1,
+                    "etiqueta": "Es pot fer servir només amb auriculars"
+                },
+                {
+                    "id": 2,
+                    "etiqueta": "Es pot utilitzar si s'està aturat"
+                },
+                {
+                    "id": 3,
+                    "etiqueta": "Està prohibit fer servir el telèfon mòbil"
+                },
+                {
+                    "id": 4,
+                    "etiqueta": "Es pot utilitzar per fer trucades d'emergència"
+                }
+            ],
+            "resposta_correcta": 3,
+            "imatge": "https://exemple.com/telefon_mobil.jpg"
+        }
+    ]
+}
