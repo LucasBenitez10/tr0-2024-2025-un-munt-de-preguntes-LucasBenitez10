@@ -8,17 +8,40 @@
 }
 
 /* Estilos Generales */
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
-    margin: 0;
-    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0; 
+    background-color: var(--color-fondo); 
+}
+
+/* Contenedor del juego */
+#contenedor-juego {
+    width: 90%; 
+    max-width: 600px; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 h1, h2, h3 {
     color: var(--color-secundario);
     margin-bottom: 10px;
+}
+
+#contenedor-juego {
+    width: 90%; 
+    max-width: 600px; 
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 input, button, select {
@@ -40,7 +63,7 @@ button {
 }
 
 button:hover {
-    background-color: #C13E2D; /* Un tono más oscuro del color principal */
+    background-color: #C13E2D; 
 }
 
 /* Contenedor principal */
@@ -60,8 +83,22 @@ button:hover {
 }
 
 #contenedor-juego input[type="text"],
-#contenedor-juego input[type="number"] {
-    width: calc(100% - 20px);
+input[type="number"],
+select,
+button {
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    width: 100%;
+    cursor: pointer; 
+}
+
+#iniciar input[type="text"],
+#iniciar input[type="number"] {
+    padding: 15px; 
 }
 
 /* Estilo del botón iniciar */
@@ -72,8 +109,9 @@ button:hover {
     font-size: 1.2em;
 }
 
+
 #iniciar button:hover {
-    background-color: #2B3334; /* Un tono más oscuro del color secundario */
+    background-color: #2B3334; 
 }
 
 /* Botones de navegación de preguntas */

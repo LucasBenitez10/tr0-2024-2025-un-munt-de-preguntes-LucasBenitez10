@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once 'crear_tablas.php';  
+require_once 'cargarPreguntas.php';  
 
 
 if (isset($_SESSION['preguntas'])) {

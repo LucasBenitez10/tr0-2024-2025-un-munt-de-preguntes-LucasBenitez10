@@ -39,7 +39,7 @@ botonIniciar.addEventListener("click", () => {
 });
 
 function cargarPreguntas(cantidadPreguntas) {
-    fetch('../../back/getPreguntas.php')
+    fetch('/tr0-2024-2025-un-munt-de-preguntes-LucasBenitez10/back/getPreguntas.php')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error en la red al cargar las preguntas');
@@ -154,7 +154,7 @@ botonEnviarRespuestas.addEventListener("click", () => {
 });
 
 function enviarResultados(respuestas) {
-    fetch('../../back/finalitza.php', {
+    fetch('/tr0-2024-2025-un-munt-de-preguntes-LucasBenitez10/back/finalitza.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
