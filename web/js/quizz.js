@@ -185,7 +185,7 @@ function mostrarResultados(data) {
 botonReiniciar.addEventListener("click", () => {
     location.reload();
     localStorage.clear();
-    fetch ("../../back/finalizarJoc.php",{
+    fetch ("/tr0-2024-2025-un-munt-de-preguntes-LucasBenitez10/back/finalizarJoc.php",{
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
