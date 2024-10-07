@@ -25,13 +25,13 @@ if (!isset($datos['respuestas']) || !is_array($datos['respuestas'])) {
 $respuesta_usuario = $datos['respuestas'];
 $preguntas = $_SESSION['preguntas'];
 $correctas = 0;
-$cantidad_preguntas = count($respuesta_usuario); // Cambiar aquí
+$cantidad_preguntas = count($respuesta_usuario); 
 
 foreach ($preguntas as $pregunta) {
     $pregunta_id = $pregunta['id'];
     $correcta = $pregunta['correcta'];
 
-    foreach ($respuesta_usuario as $respuesta) { // Cambiar aquí
+    foreach ($respuesta_usuario as $respuesta) {
         if ($respuesta['preguntaId'] == $pregunta_id) {
             if ($respuesta['respuestaId'] == $correcta) {
                 $correctas++;

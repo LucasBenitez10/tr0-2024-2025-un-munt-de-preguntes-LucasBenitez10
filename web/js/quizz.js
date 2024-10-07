@@ -147,7 +147,6 @@ botonEnviarRespuestas.addEventListener("click", () => {
         respuestaId: p.respuesta
     }));
     console.log(respuestas);
-
     clearInterval(timer); 
     enviarResultados(respuestas);
     preguntaContainer.className = "none";
@@ -162,20 +161,16 @@ function enviarResultados(respuestas) {
         },
         body: JSON.stringify({ respuestas }) 
     })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Error en la respuesta del servidor');
-        }
-        return response.json();
-    })
+    .then(response => response.json())
     .then(data => {
         mostrarResultados(data);
+        preguntaContainer.className = "none";
+        botonesSigAnt.className = "none";
     })
     .catch(error => {
         console.error('Error:', error);
     });
 }
-
 
 function mostrarResultados(data) {
     let htmlStr = '';
@@ -190,7 +185,7 @@ function mostrarResultados(data) {
 botonReiniciar.addEventListener("click", () => {
     location.reload();
     localStorage.clear();
-    fetch ("/tr0-2024-2025-un-munt-de-preguntes-LucasBenitez10/back/finalizarJoc.php",{
+    fetch ("../back/finalizarJoc.php",{
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
