@@ -12,39 +12,30 @@
 
     <div id="contenedor-juego" class="block">
         <h1>Quiz de Preguntas</h1>
-        <div id="iniciar">
-            <input type="text" id="nombre" placeholder="Ingresa tu nombre" />
-            <input type="number" id="cantidadPreguntas" min="3" max="10" placeholder="Cantidad de preguntas" />
-            <button id="iniciarJuego">Iniciar Juego</button>
-        </div>
-        <br>
+        <div id="contenedor-pantalla-joc">
+            <div id="iniciar">
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre" />
+                <input type="number" id="cantidadPreguntas" min="3" max="10" placeholder="Cantidad de preguntas" />
+                <button id="iniciarJuego">Iniciar Juego</button>
+            </div>
+            <br>
+                
+            <div id="contenedor-preguntas">
+                
+            </div>
+            <div id="botones" class="none">
+                <button id="anteriorPregunta" >Anterior Pregunta</button>
+                <button id="siguientePregunta" >Siguiente Pregunta</button>
+        
+                <button id="enviarRespuestas" class="none">Enviar Respuestas</button>
+            </div>
             
-        <div id="contenedor-preguntas">
-            
         </div>
-        <div id="botones" class="none">
-            <button id="anteriorPregunta" >Anterior Pregunta</button>
-            <button id="siguientePregunta" >Siguiente Pregunta</button>
-    
-            <button id="enviarRespuestas" class="none">Enviar Respuestas</button>
-        </div>
+       
         
         <div id="timer"></div>
         
-    
         <br><br>
-    
-        <div id="contenedor-estat" class="none">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Pregunta</th>
-                        <th>Estado</th>
-                    </tr>
-                </thead>
-                <tbody id="tBody"></tbody>
-            </table>
-        </div>
         
         <div id="pantallaFinal" class="none">
             

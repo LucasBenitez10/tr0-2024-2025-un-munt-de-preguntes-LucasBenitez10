@@ -18,7 +18,7 @@ const botonReiniciar = document.getElementById("reiniciarJuego");
 const pantallaFinal = document.getElementById("pantallaFinal");
 const timerDisplay = document.getElementById("timer");
 const preguntaContainer = document.getElementById('contenedor-preguntas');
-const tBody = document.getElementById('tBody');
+const contenedorDisplayJoc = document.getElementById('contenedor-pantalla-joc');
 
 
 botonIniciar.addEventListener("click", () => {
@@ -163,9 +163,9 @@ function enviarResultados(respuestas) {
     })
     .then(response => response.json())
     .then(data => {
+        //console.log(data);
         mostrarResultados(data);
-        console.log(data);
-        preguntaContainer.className = "none";
+        contenedorDisplayJoc.className = "none";
         botonesSigAnt.className = "none";
     })
     .catch(error => {
@@ -176,7 +176,7 @@ function enviarResultados(respuestas) {
 function mostrarResultados(data) {
     let htmlStr = '';
     htmlStr += `<h2>Resultados de ${localStorage.getItem("nombre")}</h2>
-    <p>Respuestas correctas: ${data.correctas} / ${data.cantidad_preguntas}</p>
+    <p>Respuestas correctas: ${data.correctas} / ${data.total}</p>
     `;
     pantallaFinal.innerHTML = htmlStr;
     pantallaFinal.className = "block";
