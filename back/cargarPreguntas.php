@@ -60,7 +60,7 @@ try {
     }
 
     // Cargar el archivo JSON
-    $json_path = '/tr0-2024-2025-un-munt-de-preguntes-LucasBenitez10/preguntas.json';
+    $json_path = '/preguntas.json';
     if (!file_exists($json_path)) {
         throw new Exception("El archivo JSON no existe en la ruta especificada: $json_path");
     }
