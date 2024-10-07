@@ -39,7 +39,8 @@ foreach ($preguntas as $pregunta) {
         }
     }
 }
-
+echo $correctas;
+echo $cantidad_preguntas;    
 echo json_encode(['correctas' => $correctas, 'total' => $cantidad_preguntas]);
 
 ?>

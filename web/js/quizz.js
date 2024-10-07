@@ -175,7 +175,7 @@ function enviarResultados(respuestas) {
 function mostrarResultados(data) {
     let htmlStr = '';
     htmlStr += `<h2>Resultados de ${localStorage.getItem("nombre")}</h2>
-    <p>Respuestas correctas: ${data.correctas} / ${data.total}</p>
+    <p>Respuestas correctas: ${data.correctas} / ${data.cantidad_preguntas}</p>
     `;
     pantallaFinal.innerHTML = htmlStr;
     pantallaFinal.className = "block";
