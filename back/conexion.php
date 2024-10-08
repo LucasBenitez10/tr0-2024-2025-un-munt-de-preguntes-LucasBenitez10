@@ -5,9 +5,9 @@
 // $password = "Lucas25_daw";
 
  //datos unicamente para ejectur en xampp local
-$servername = "localhost"; 
+ $servername = "localhost"; 
 $database = "preguntas";
-$username = "root";
+ $username = "root";
 $password = "";
 
 $conn = mysqli_connect($servername, $username, $password, $database);

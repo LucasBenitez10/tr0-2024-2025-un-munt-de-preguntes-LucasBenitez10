@@ -154,7 +154,7 @@ botonEnviarRespuestas.addEventListener("click", () => {
 });
 
 function enviarResultados(respuestas) {
-    fetch('/tr0-2024-2025-un-munt-de-preguntes-LucasBenitez10/back/finalitza.php', {
+    fetch('../back/finalitza.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
